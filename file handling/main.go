@@ -18,7 +18,7 @@ func main() {
 		//steps to write into the files
 
 		content := "hello world by Ankit"
-		_, errors := io.WriteString(file, content+"\n")
+		_, errors := io.WriteString(file, content)
 		if errors != nil {
 			fmt.Println("Error while writinf file: ", errors)
 			return
